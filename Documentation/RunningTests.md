@@ -41,6 +41,10 @@ CTEST_OUTPUT_ON_FAILURE=1 ninja test
 ctest --output-on-failure
 ```
 
+For failing LibWeb ref tests images are generated with the expected and real result.
+When tested with lagom, they are placed in the `SERENITY_SOURCE_DIR/Build/lagom/Ladybird/test-dumps` folder.
+
+
 ### Running with Sanitizers
 
 CI runs host tests with Address Sanitizer and Undefined Sanitizer instrumentation enabled. These tools catch many
